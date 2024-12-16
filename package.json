@@ -11,7 +11,7 @@
     "vercel-build": "prisma generate && prisma migrate deploy && next build"
   },
   "dependencies": {
-    "@prisma/client": "^6.0.1",
+    "@prisma/client": "^5.22.0",
     "@radix-ui/react-slot": "^1.1.1",
     "@vercel/postgres": "^0.10.0",
     "class-variance-authority": "^0.7.1",
