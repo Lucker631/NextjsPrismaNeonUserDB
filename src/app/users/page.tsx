@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface User {
   id: number
@@ -76,9 +77,11 @@ export default function UsersPage() {
                   <Card key={user.id} className="p-4">
                     <div className="flex items-center gap-4">
                       <div className="h-12 w-12 rounded-full overflow-hidden">
-                        <img 
+                        <Image 
                           src={user.image} 
                           alt={`${user.name}'s avatar`}
+                          width={500} // Specify width
+                          height={300} // Specify height
                           className="h-full w-full object-cover"
                         />
                       </div>

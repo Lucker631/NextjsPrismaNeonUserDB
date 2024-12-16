@@ -1,10 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  "env":{
+  reactStrictMode: true,
+  env: {
     POSTGRES_PRISMA_URL: process.env.POSTGRES_PRISMA_URL
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      }
+    ],
+    domains: ['localhost', 'example.com']
   }
-  /* config options here */
 };
 
 export default nextConfig;

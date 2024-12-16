@@ -12,7 +12,7 @@ export default function HomePage() {
         <CardContent className="space-y-4">
           <div className="flex flex-col gap-4">
             <Link href="/register">
-              <Button className="w-full" size="lg">
+              <Button className="w-full bg-blue-600" size="lg">
                 Register New User
               </Button>
             </Link>

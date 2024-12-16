@@ -37,6 +37,7 @@ export default function SubmitForm() {
 
       router.push('/success')
     } catch (err) {
+      console.log(err)
       setError('Failed to submit form. Please try again.')
     } finally {
       setIsSubmitting(false)
