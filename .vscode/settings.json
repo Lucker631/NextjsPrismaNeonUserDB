@@ -1,0 +1,8 @@
+{
+    "aggronaut.excludedDirectories": [
+        "node_modules",
+        "dist",
+        ".next",
+        ".vscode"
+    ]
+}
